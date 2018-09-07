@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguros SURA - Mi Mascota Paso 5</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main_v.css">
+  <link rel="stylesheet" href="css/style_v.css">
+  <link rel="stylesheet" href="css/help-class.css">
+
+</head>
+<body>
+    <header>
+        <div class="sura-logo-container">
+            <img src="img/logo-sura.png" alt="seguros sura" class="sura-logo">
+        </div>
+        <div class="sura-logo-underline">
+            <p>SEGUROS</p>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="sura-main-container"> <!-- main container -->
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h1 class="sura-titulo bold text-center">Contratación Seguro Mi Mascota</h1>
+                    </div>
+                </div>
+                <!-- titulo -->
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 relative valorcuota">
+                            <h1 class="sura-subtitulo bold text-left">Valor Cuota</h1>
+                            <img src="img/pay.png" alt="" class="absolute icon-right">
+                            <h2><strong>$6.990 CLP</strong></h2>
+                            <h5>0,2592 UF</h5>
+                            <h2><strong>Fecha primer vencimiento</strong></h2>
+                            <h5>00 / 00 / 0000</h5>
+                            <p class="sura-parrafo">*Valores en pesos son referenciales</p>
+                            <br>
+                        </div>
+                    </div>
+                
+                    <form action="" class="formulario-pago" data-form="validate" method="POST">
+                        <!-- detalle de pago -->
+                        
+                        <div class="row detalle-pago">
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <div class="precio-titulo">
+                                    <p>Precio base:</p>
+                                    <p>$6.990 CLP</p>
+                                    <p>0,2592 UF</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <div class="precio-uf">
+                                    <p>Precio total:</p>
+                                    <p>$6.990 CLP</p>
+                                    <p>0,2592 UF</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row relative mobile-img-container">
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <br>
+                                <div class="prima-cl">
+                                    <p><strong>Prima neta</strong></p>
+                                    <p>$441.695</p>
+                                    <p>UF 16.55</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <br>
+                                <div class="prima-cl">
+                                    <p><strong>Total prima</strong></p>
+                                    <p>$525.497</p>
+                                    <p>UF 19.59</p>
+                                </div>
+                            </div>
+                            <img src="img/patpass.png" alt="" class="pat-pass-payment-logo absolute img-right">
+                        </div>
+
+                        <div class="row detalle-prima"></div>
+                        <p class="sura-parrafo">* Cliente no posee mandatos activos en la compañía.</p>
+
+                        <!-- activar mandato -->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-8 input-mandato  pd0">
+                                <label for="patente" class="form-label">Número de cuotas*</label>
+                                <input class="form-control" placeholder="XXXXXXXXXX" type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-3 pad-b-50 pd0">
+                                <button id="activarPat" type="button" class="btn btn-activar-mandato" data-toggle="modal" data-target="#modal-pat">ACTIVAR NUEVO MANDATO</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- botones -->
+                <div class="row text-center buttons-container text-center">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                        <a href="Paso-10-exito.html">
+                            <button class="btn btn-accion mb10 sura-boton-contratar"  id="confirm-contract" type="button">CONFIRMAR</button>
+                        </a>
+                        <a href="Paso1.html" class="otros-datos-a"><p class="txt-14 margin-top-10">Cotizar con otros datos</p></a>
+                        </div>
+                    </div>
+                    <!-- botones -->
+
+                <!-- modal pat -->
+                <div class="modal fade modal-md" id="modal-pat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <p class="modal-title text-left" id="gridSystemModalLabel"><img src="img/icon-warning-red.png" alt="" class="icon-modal">¡Atención! para finalizar exitosamente este proceso, debes cerrar sesión.
+                        <img src="img/icon-key.png" alt="icono sesión" class="icono-sesion">
+                        </p>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <img src="img/example-pat.png" alt="pat factura" class="img-responsive img-factura">
+                            </div>
+                        </div>
+                      </div>        
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+
+                <!-- modal exito -->
+                <div class="modal fade modal-md modal-exito" id="suscripcion-pat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                      <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <h3 class="bold txt-18 margin-bottom-20">Suscripción PAT</h3>
+                                <p class="txt-14 margin-bottom-30 text-center">Te has suscrito exitosamente a la modalidad de pago PAT. Tu número de mandato es: xxxxxx</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <button class="btn close-modal-btn" data-dismiss="modal">CONTINUAR</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                <img src="img/modal-exito.png" alt="pat" class="img-responsive manos-icon">
+                            </div>
+                        </div>
+                      </div>        
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+
+            </div><!-- main container -->
+        </div>
+    </div>
+
+
+    <footer></footer>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/locales/bootstrap-datepicker.es.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

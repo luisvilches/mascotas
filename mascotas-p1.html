@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguros SURA - Mi Mascota Paso 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main_v.css">
+    <link rel="stylesheet" href="css/style_v.css">
+    <link rel="stylesheet" href="css/help-class.css">
+    <!--link rel="stylesheet" href="css/datepicker.css"-->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P83V85G');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P83V85G"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+      <div class="sura-logo-container">
+         <img src="img/logo-sura.png" alt="seguros sura" class="sura-logo">
+     </div>
+     <div class="sura-logo-underline">
+         <p>SEGUROS</p>
+     </div>
+    </header>
+    <!-- wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <h1 class="sura-titulo bold">Cotización Seguro Mi Mascota</h1>
+        </div>
+    </div>
+    <!-- /wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="sura-main-container">
+                <form class="index-1">
+
+                    <!-- selecciona tipo de mascota -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h2 class="sura-subtitulo bold ref">Datos de tu Mascota</h2>
+                            <p class="sura-legal">*Campos son obligatorios</p>
+                            <p class="sura-parrafo pad-b-30">¿A quién deseas contratarle este seguro?</p>
+                            <div class="select-type">
+                           		<!--div class="row">
+                           			<div class="col-xs-6 col-sm-3 col-lg-2">
+                           				<img src="img/dog-gris.png" class="icon-perro" alt="">
+                           			</div>
+                           			<div class="col-xs-6 col-sm-3 col-lg-2">
+                           				<img src="img/cat-gris.png" class="icon-gato" alt="">
+                           			</div>
+                           		</div-->
+                           		<div class="row pad-t-10">
+                           			<div class="col-xs-6 col-sm-3 col-lg-2 radio-buttons">
+                           				<input type="radio" id="Perro" name="tipo-mascota" value="Perro" onchange="perroGato()">
+    				                      <label for="Perro"><img src="img/dog-gris.png" class="icon-perro" alt=""><p class="text-center mt10">Perro</p></label>
+                           			</div>
+                           			<div class="col-xs-6 col-sm-3 col-lg-2 radio-buttons">
+                           				<input type="radio" id="Gato" name="tipo-mascota" value="Gato" onchange="perroGato()">
+    				                      <label for="Gato"><img src="img/cat-gris.png" class="icon-gato" alt=""><p class="text-center mt10">Gato</p></label>
+                           			</div>
+                           		</div>
+                           </div> 
+                        </div><!-- .col-xs-12 -->
+                    </div><!-- .row -->
+                    <!-- selecciona tipo de mascota -->
+
+                    <!-- detalle de tu Mascota -->
+                    <div class="row home-details">
+                        <div class="col-xs-12 col-sm-12 col-md-10">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-7">
+                                    <div class="row form-group">
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <span class="sura-parrafo">¿Cuál es su nombre?*</span>
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group perro-input">
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <span class="sura-parrafo">Indícanos su raza*</span>
+                                            <select class="form-control">
+                                                <option>Otra</option>
+                                                <option>Raza perro 1</option>
+                                                <option>Raza perro 2</option>
+                                                <option>Raza perro 3</option>
+                                                <option>Raza perro 4</option>
+                                                <option>Raza perro 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <span class="sura-parrafo">&nbsp;</span>
+                                            <input type="text" class="form-control" placeholder="Raza nueva">
+                                        </div>
+                                    </div>
+
+                                    <div class="row form-group gato-input hidden">
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <span class="sura-parrafo">Indicanos su raza*</span>
+                                            <select class="form-control">
+                                                <option>Raza gato 1</option>
+                                                <option>Raza gato 2</option>
+                                                <option>Raza gato 3</option>
+                                                <option>Raza gato 4</option>
+                                                <option>Raza gato 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6">
+                                            <span class="sura-parrafo">&nbsp;</span>
+                                            <input type="text" class="form-control" placeholder="Raza nueva">
+                                        </div>
+                                    </div>
+
+                                </div><!-- .col-xs-12 -->
+                            </div><!-- .row -->
+                        </div><!-- .col-xs-12 -->
+                    </div><!-- .row -->
+                    <!-- detalle de tu Mascota -->
+                    <div class="row declaracion">
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p class="sura-parrafo">Selecciona su tamaño*</p>
+                                </div>
+                                <div class="col-xs-4 estructura-icon-cont">
+                                    <div class="row">
+                                        <div class="col-md-12 radio-buttons">
+                                            <input type="radio" id="tamanoS" name="tamano" value="tamanoS" data-target="#contenido" />
+                                            <label for="tamanoS"><img src="img/pata-1.png" class="icon-tipo-cobertura icon-tamano-s" alt="">Pequeño<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 estructura-icon-cont">
+                                    <div class="row">
+                                        <div class="col-md-12 radio-buttons">
+                                            <input type="radio" id="tamanoM" name="tamano" value="tamanoM" data-target="#estructura-contenido"/>
+                                            <label for="tamanoM"><img src="img/pata-2.png" class="icon-tipo-cobertura icon-tamano-m" alt="">Mediano<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 estructura-icon-cont">
+                                    <div class="row">
+                                        <div class="col-md-12 radio-buttons">
+                                            <input type="radio" id="tamanoL" name="tamano" value="tamanoL" data-target="#estructura"/>
+                                            <label for="tamanoL"><img src="img/pata-3.png" class="icon-tipo-cobertura icon-tamano-l" alt="">Grande<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- .row -->
+                            <div class="row box-form">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <span class="sura-parrafo">Fecha de nacimiento</span>
+                                    <!--nput type="date" class="form-control"-->
+                                    <input type='text' id='datepicker' class="form-control datepicker-input" placeholder="00-00-0000"/>
+                                </div>
+                            </div><!-- .row -->
+                            <div class="row box-form">
+                                <div class="col-xs-12 col-sm-10">
+                                    <p class="sura-parrafo">¿Cuál es el sexo de tu mascota?*</p>
+                                    <div class="radio-buttons">
+                                        <input type="radio" id="macho" name="material" value="macho"/>
+                                        <label for="macho"><span></span>Macho</label>
+
+                                        <input type="radio" id="hembra" name="material" value="hembra"/>
+                                        <label for="hembra" class="pdl50"><span></span>Hembra</label>
+                                    </div>
+                                </div>
+                            </div><!-- .row -->
+                        </div><!-- .col-xs-12 -->
+                    </div><!-- .row -->
+                  
+                    <!-- detalle de tu Mascota -->
+              
+                    <!-- botones -->
+                    <div class="row sura-margin-row">
+                        <div class="alert hidden">
+                            <div class="alert alert-danger" role="alert">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                <span class="sr-only">Error:</span>
+                                Complete todos los campos requeridos
+                            </div>
+                        </div>
+                        <div class="col-xs-12 text-center hidden-xs">
+                            <a href="" class="btn btn-volver">VOLVER</a>
+                            <button class="btn btn-continuar" type="submit" onclick="validatepaso1()">CONTINUAR</button>
+                            <img src="img/cat-animado.png" class="right">
+                        </div>
+                        <div class="visible-xs">
+                            <div class="col-xs-12 text-center" >
+                                <img src="img/cat-animado.png">
+                            </div>
+                            <div class="col-xs-12 text-center" >
+                                <a href="" class="btn btn-volver">VOLVER</a>
+                            </div>
+                            <div class="col-xs-12 text-center" >
+                                <button class="btn btn-continuar" type="submit" onclick="validatepaso1()">CONTINUAR</button>
+                            </div>
+                        </div>
+                    </div><!-- botones -->
+
+                </form><!-- form -->
+            </div><!-- .sura-main-container -->
+        </div>
+    </div>
+    <footer></footer>
+
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="static">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h1 class="sura-titulo bold"><img src="img/icon-warning.png" alt="icono-atencion" class="warning-icon">Lo sentimos,</h1>
+                            <p class="sura-parrafo bold">Por ahora no tenemos un producto diseñado para tu <br>
+                            necesidad.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                            <a href="" class="btn btn-volver" data-dismiss="modal">CERRAR</a>
+                            <a href="" class="btn btn-continuar">VOLVER</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/locales/bootstrap-datepicker.es.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

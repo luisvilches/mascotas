@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seguros SURA - Paso 1</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P83V85G');</script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-P83V85G""
+      height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="sura-logo-container">
+         <img src="img/logo-sura.png" alt="seguros sura" class="sura-logo">
+     </div>
+     <div class="sura-logo-underline">
+         <p>SEGUROS</p>
+     </div>
+    </header>
+    <!-- wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <h1 class="sura-titulo bold">Simulación de Seguro Hogar Protegido</h1>
+        </div>
+    </div>
+   <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="sura-wrap-wizard">
+              <ul class="sura-wizard">
+                  <li class="sura-active">
+                      <span class="sura-step">1</span>
+                      <span class="sura-texto">Datos <br>Hogar</span>
+                  </li>
+
+                  <li>
+                      <span class="sura-step">2</span>
+                      <span class="sura-texto">Tipo <br>Seguro</span>
+                  </li>
+
+                  <li>
+                      <span class="sura-step">3</span>
+                      <span class="sura-texto">Datos </br>Pago</span>
+                  </li> 
+                  <li>
+                      <span class="sura-step">4</span>
+                      <span class="sura-texto">Datos </br>Pago</span>
+                  </li>
+              </ul>
+            </div>
+       </div>
+   </div>
+    <!-- /wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="sura-main-container">
+                <h2 class="sura-subtitulo bold">Requisitos</h2>
+                <p class="sura-parrafo">Para poder contratar este producto debes cumplir con lo siguiente:</p>
+
+                <!-- caja -->
+                <div class="row sura-requisitos">
+                    <div class="col-xs-12 col-sm-12 col-md-10">
+                        <div class="sura-list-box">
+                            <ul>
+                                <li>Mi Hogar es de uso habitacional.</li>
+                                <li>Mi Hogar no se encuentra deshabilitado más de 30 días corridos.</li>
+                                <li>Mi Hogar esta a menos de 15 KM. de un cuerpo de bomberos.</li>
+                                <li>Mi Hogar tiene menos de <strong>30 años</strong>.</li>
+                            </ul>
+                        </div>
+                        <p class="sura-parrafo inline">¿Cumples con todos ellos?</p>
+
+                        <div class="radio-buttons">
+                            <input type="radio" id="si-cumplo" name="cumplir" value="si-cumplo"/>
+                            <label for="si-cumplo"><span></span>SI</label>
+
+                            <input type="radio" id="no-cumplo" name="cumplir" value="no-cumplo"/>
+                            <label for="no-cumplo"><span></span>NO</label>
+                        </div>
+                        
+                        <div id="requisitos-alert" class="alert hidden no-padding-left">
+                            <div class="alert alert-danger" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            Para continuar, debes completar el campo obligatorio.
+                            </div>
+                         </div>
+
+                    </div>
+                </div>
+                <!-- caja -->
+                
+                <form class="index-1">
+
+                <!-- selecciona tipo de hogar -->
+                <div class="row home-type">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                       <h3 class="sura-subtitulo bold">Selecciona el tipo de hogar a cotizar</h3>
+                       <div class="select-type">
+                       		<div class="row">
+                       			<div class="col-xs-6 col-sm-12 col-md-2 casa-container">
+                       				<img src="img/icon-casa2.png" class="icon-casa" alt="">
+                       			</div>
+                       			<div class="col-xs-6 col-sm-12 col-md-2 text-center edificio-container">
+                       				<img src="img/icon-edificio2.png" class="icon-depto" alt="">
+                       			</div>
+                       		</div>
+                       		<div class="row">
+                       			<div class="col-xs-5 col-sm-5 col-md-2 radio-buttons">
+                       				<input type="radio" id="Casa" name="tipo-hogar" value="Casa"/ onchange="deptoCasa()">
+				                    <label for="Casa"><span></span>Casa</label>
+                       			</div>
+                       			<div class="col-xs-7 col-sm-7 col-md-3 radio-buttons">
+                       				<input type="radio" id="Departamento" name="tipo-hogar" value="Departamento"/ onchange="deptoCasa()">
+				                    <label for="Departamento"><span></span>Departamento</label>
+                       			</div>
+                       		</div>
+                       </div> 
+                    </div>
+                </div>
+                <!-- selecciona tipo de hogar -->
+
+                <!-- detalle del hogar -->
+                <div class="row home-details">
+                    <div class="col-xs-12 col-sm-12 col-md-10">
+                        <h4 class="sura-subtitulo bold">Detalle del Hogar</h4>
+                        <div class="row">
+                        	<div class="col-xs-12 col-sm-12 col-md-12">
+                        		<div class="row first-inputrow">
+                        			<div class="col-xs-12 col-sm-12 col-md-6">
+                        				 <span class="sura-parrafo">Dirección *</span>
+                        				 <input type="text" class="form-control" placeholder="">
+                        			</div>
+                              <!-- direccion casa-->
+                        			<div class="col-xs-12 col-sm-12 col-md-6 casa-input">
+                        				 <span class="sura-parrafo">Nº Dirección *</span>
+                        				 <input type="tel" class="form-control" placeholder="">
+                        			</div>
+                              <!-- direccion casa -->
+                              <!-- direccion depto-->
+                              <div class="col-xs-12 col-sm-12 col-md-3 depto-input hidden">
+                                  <span class="sura-parrafo">Número *</span>
+                                  <input type="text" class="form-control" placeholder="">
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-md-3 depto-input hidden">
+                                 <span class="sura-parrafo">Piso *</span>
+                                 <input type="text" class="form-control" placeholder="">
+                              </div>
+                              <!-- direccion depto -->
+                        		</div>
+                        		<div class="row second-inputrow">
+                        			<div class="col-xs-12 col-sm-12 col-md-6">
+                        				 <span class="sura-parrafo">Comuna *</span>
+                        				 <select class="form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+										 </select>
+                        			</div>
+                        			<div class="col-xs-12 col-sm-12 col-md-3">
+                        				 <span class="sura-parrafo">Ciudad/Provincia *</span>
+                        				 <select class="form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+										 </select>
+                        			</div>
+                        			<div class="col-xs-12 col-sm-12 col-md-3">
+										<span class="sura-parrafo">Región *</span>
+                        				<select class="form-control">
+											  <option>1</option>
+											  <option>2</option>
+											  <option>3</option>
+											  <option>4</option>
+											  <option>5</option>
+										 </select>
+                        			</div>
+                        		</div>
+                        		<div class="row construction-material">
+                        			<div class="col-xs-12 col-sm-12 col-md-10">
+                        				<p class="sura-parrafo">¿Tu hogar es sólido o ligero? <img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Sólido es contrucción de concreto, y ligero es construcción de madera."></p>
+                        				<div class="radio-buttons">
+	                        				<input type="radio" id="solido" name="material" value="solido"/>
+				                            <label for="solido"><span></span>Sólido</label>
+
+				                            <input type="radio" id="ligero" name="material" value="ligero"/>
+				                            <label for="ligero"><span></span>Ligero</label>
+                        				</div>
+                        			</div>
+                        		</div>
+                        		<div class="row sura-margin-row">
+                        			<div class="col-xs-12 col-sm-12 col-md-6">
+                        				<select class="form-control">
+										  <option>Selecciona tipo de material</option>
+										  <option>Madera</option>
+										  <option>Adobe</option>
+										  <option>Otros</option>
+										</select>
+                        			</div>
+                        		</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- detalle del hogar -->
+                <!-- declaracion -->
+                <div class="row declaracion">
+                	<div class="col-xs-12 col-sm-12 col-md-12">
+                		<h5 class="sura-subtitulo bold">Declaración del asegurado</h5>
+                		<p class="sura-parrafo">¿La vivienda se encuentra localizada dentro de un condominio?</p>
+                		<div class="radio-buttons">
+                            <input type="radio" id="si-condominio" name="es-condominio" value="si-condominio"/>
+                            <label for="si-condominio"><span></span>SI</label>
+
+                            <input type="radio" id="no-condominio" name="es-condominio" value="no-condominio"/>
+                            <label for="no-condominio"><span></span>NO</label>
+                        </div>
+          				<div class="row">
+          					<div class="col-xs-12 col-sm-12 col-md-5">
+		          				<select  id="tipo-perfil" class="form-control"> 
+								   <option value="0">Selecciona tipo de perfil</option>
+								   <option>Dueño</option>
+								   <option>Arrendatario</option>
+								   <option>Inversionista</option>
+								</select>
+          					</div>
+          				</div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-4 estructura-icon-cont">
+                                <img src="img/icon-contenido2.png" class="icon-tipo-cobertura icon-contenido" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 radio-buttons">
+                                        <input type="radio" id="Contenido" name="cobertura" value="Contenido" data-target="#contenido" />
+                                        <label for="Contenido"><span></span>Contenido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 estructura-icon-cont">
+                                <img src="img/icon-estruconte2.png" class="icon-tipo-cobertura icon-estruc-con" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 radio-buttons">
+                                        <input type="radio" id="Estruc-cont" name="cobertura" value="Estrucont" data-target="#estructura-contenido"/>
+                                        <label for="Estruc-cont"><span></span>Estructura y</br> Contenido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4 estructura-icon-cont">
+                                <img src="img/icon-estructura2.png" class="icon-tipo-cobertura icon-estructura" alt="">
+                                <div class="row">
+                                    <div class="col-md-12 radio-buttons">
+                                        <input type="radio" id="Estructura" name="cobertura" value="Estructura" data-target="#estructura"/>
+                                        <label for="Estructura"><span></span>Estructura</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                	</div>
+                </div>
+                </form>
+                <!-- declaracion -->
+                <!-- tabs-->
+
+
+                <div class="row tabs-sura hidden">
+                    <div class="col-xs-12 col-sm-12 col-md-10 tab-content">
+                        <div id="contenido" class="tab-pane tab-sura box-contract active">
+                            <div class="row">
+                                <p class="sura-parrafo">De acuerdo a la información ingresada, el producto que te sugerimos es: <strong>Contenido</strong></p>
+                                <div class="col-xs-12 col-sm-12 col-md-2 text-center">
+                                   <img src="img/icon-ampolleta.png" alt=""> 
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-10">
+                                    <p class="sura-parrafo">En Contenidos, tendrás protegidos productos destinados a casa habitación como equipos de línea blanca y electrónica, además de otros enseres personales incluyendo ropa y muebles.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="estructura-contenido" class="tab-pane tab-sura box-contract">
+                            <div class="row">
+                                <p class="sura-parrafo">De acuerdo a la información ingresada, el producto que te sugerimos es: <strong>Estructura y Contenido</strong></p>
+                                <div class="col-xs-12 col-sm-12 col-md-2 text-center">
+                                   <img src="img/icon-ampolleta.png" alt=""> 
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-10">
+                                    <p class="sura-parrafo">En Estructura tendrás protegido los daños que podrían causar eventos de la naturaleza tales como aluviones, vientos o inundaciones; daños internos por roturas de cañerías entre otros.
+                                    Contenidos como equipos de línea blanca y electrónica, además de otros enseres personales incluyendo ropa y muebles.
+                                    </br>
+                                    <i>* Si tienes un Crédito Hipotecario, la recomendación es tomar solo Contenido, puesto que la Estructura está cubierta por el seguro hipotecario.</i></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="estructura" class="tab-pane tab-sura box-contract">
+                            <div class="row">
+                                <p class="sura-parrafo">De acuerdo a la información ingresada, el producto que te sugerimos es: <strong>Estructura</strong></p>
+                                <div class="col-xs-12 col-sm-12 col-md-2 text-center">
+                                   <img src="img/icon-ampolleta.png" alt=""> 
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-10">
+                                    <p class="sura-parrafo">En Estructura tendrás protegido los daños que podrían causar eventos de la naturaleza tales como aluviones, vientos o inundaciones; daños internos por roturas de cañerías entre otros.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+                <!-- botones -->
+                <div class="row sura-margin-row">
+                    <div class="alert hidden">
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Error:</span>
+                          Complete todos los campos requeridos
+                        </div>
+                    </div>
+                	<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                		<a href="" class="btn btn-volver">VOLVER</a>
+                		<button class="btn btn-continuar" type="submit" onclick="validatepaso1()">CONTINUAR</button>
+                	</div>
+                </div>
+                <!-- botones -->
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <!-- Small modal -->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" data-backdrop="static">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="sura-titulo bold"><img src="img/icon-warning.png" alt="icono-atencion" class="warning-icon">Lo sentimos,</h1>
+                    <p class="sura-parrafo bold">Por ahora no tenemos un producto diseñado para tu </br>
+                    necesidad.</p>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <a href="" class="btn btn-volver" data-dismiss="modal">CERRAR</a>
+                    <a href="" class="btn btn-continuar">VOLVER</a> 
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

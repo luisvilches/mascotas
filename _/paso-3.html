@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguros SURA - Paso 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P83V85G');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src=""https://www.googletagmanager.com/ns.html?id=GTM-P83V85G""
+      height=""0"" width=""0"" style=""display:none;visibility:hidden""></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="sura-logo-container">
+             <img src="img/logo-sura.png" alt="seguros sura" class="sura-logo">
+        </div>
+        <div class="sura-logo-underline">
+            <p>SEGUROS</p>
+        </div>
+    </header>
+    <!-- wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <h1 class="sura-titulo bold">Simulación de Seguro Hogar Protegido</h1>
+        </div>
+    </div>
+    <div class="sura-wrap-wizard">
+      <ul class="sura-wizard">
+          <li>
+              <span class="sura-step">1</span>
+              <span class="sura-texto">Datos <br>Hogar</span>
+          </li>
+
+          <li>
+              <span class="sura-step">2</span>
+              <span class="sura-texto">Tipo <br>Seguro</span>
+          </li>
+
+          <li class="sura-active">
+              <span class="sura-step">3</span>
+              <span class="sura-texto">Datos </br>Pago</span>
+          </li>
+      </ul>
+    </div>
+    <!-- /wizard -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+           <div class="sura-main-container">
+                <!--datos del asegurado -->
+                <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-12">
+                       <h1 class="sura-subtitulo bold">Datos del asegurado</h1>
+                       <p class="sura-parrafo">*Campos son obligatorios</p>
+                   </div>
+                </div>
+                <div class="row sura-margin-row">
+                   <div class="col-xs-12 col-sm-6 col-md-4">
+                       <span class="sura-parrafo">Rut *</span>
+                        <input type="tel" class="form-control" id="rut" name="rut">
+                   </div>
+                </div>
+                <div class="row sura-margin-row">
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Nombres *</span>
+                        <input type="text" class="form-control">
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Apellido Paterno *</span>
+                        <input type="text" class="form-control"">
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Apellido Materno *</span>
+                        <input type="text" class="form-control">
+                   </div>
+                </div>
+                <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Email*</span>
+                        <input type="email" class="form-control">
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Celular *</span>
+                        <input type="tel" class="form-control">
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Teléfono (opcional)</span>
+                        <input type="tel" class="form-control">
+                   </div>
+                </div>
+                <!--datos del asegurado -->
+                
+                <!-- formas de pago -->
+                <div class="row sura-margin-row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h2 class="sura-subtitulo bold">Formas de Pago</h2>
+                        <span class="sura-parrafo">*Campos son obligatorios</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Tipo de pago *</span>
+                        <select id="tipo-pago" class="form-control">
+                            <option>Tipo de pago</option>
+                            <option>PAC</option>
+                            <option>PAT</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- formas de pago -->
+
+                <!-- cajas -->
+                <div class="row sura-margin-row sura-boxes-container">
+                    <div class="col-xs-12 col-sm-6 col-md-3 sura-box-container">
+                        <div class="sura-box">
+                            <div class="box-header">
+                                <p>Prima neta</p>
+                            </div>
+                            <div class="box-body">
+                                <p>$ 51.216</p>
+                                <span>UF 1.909</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 sura-box-container">
+                        <div class="sura-box">
+                            <div class="box-header">
+                                <p>IVA</p>
+                            </div>
+                            <div class="box-body">
+                                <p>$ 9.731</p>
+                                <span>UF 0,363</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 sura-box-container">
+                        <div class="sura-box">
+                            <div class="box-header">
+                                <p>Total prima</p>
+                            </div>
+                            <div class="box-body">
+                                <p>$ 60.947</p>
+                                <span>UF 2,272</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 sura-box-container">
+                        <div class="sura-box">
+                            <div class="box-header">
+                                <p class="bold">Valor Cuota</p>
+                            </div>
+                            <div class="box-body">
+                                <p class="bold">$ 5.079</p>
+                                <span class="bold">UF 1,909</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cajas -->
+
+                <!-- form PAC -->
+                <div id="pac-payment" class="row sura-margin-row hidden">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Banco *</span>
+                        <input type="text" class="form-control" id="exampleInputName2"> 
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Número de cuenta *</span>
+                        <input type="text" class="form-control" id="exampleInputName2">
+                        <p class="sura-parrafo">*Ingresar sólo números</p>
+                    </div>
+                </div>
+                <!-- form PAC -->
+
+                <!--form PAT-->
+                <div id="pat-payment" class="hidden">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <span class="sura-parrafo">Banco *</span>
+                            <input type="text" class="form-control">  
+                        </div>
+                    </div>
+                    <div class="row sura-margin-row">
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <span class="sura-parrafo">Tarjeta de Crédito *</span>
+                            <input type="tel" class="form-control" onkeyup="tel()">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <span class="sura-parrafo">Número de Tarjeta *</span>
+                            <input type="tel" class="form-control" onkeyup="tel()">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6">
+                            <span class="sura-parrafo">Vencimiento de Tarjeta *</span>
+                            <input type="tel" class="form-control" onkeyup="tel()">
+                        </div>
+                     </div>
+                </div>
+                <!--form PAT-->
+
+                <!--informacion cuotas -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h3 class="sura-subtitulo bold">Información cuotas</h3>
+                        <span class="sura-parrafo">*Campos son obligatorios</span>
+                    </div>
+                </div>
+                <div class="row sura-margin-row">
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                       <span class="sura-parrafo">Nº de cuotas *</span>
+                       <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select> 
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Día de vencimiento *</span>
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                         </select>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4">
+                        <span class="sura-parrafo">Fecha primer vencimiento *</span>
+                        <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                         </select>
+                    </div>
+                </div>
+                <!-- informacion cuotas -->
+
+                <!-- botones -->
+                <div class="row sura-margin-row">
+                    <div class="alert alert-danger hidden" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                          <span class="sr-only">Error:</span>
+                          Complete todos los campos requeridos
+                     </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <a href="paso2.html" class="btn btn-volver">VOLVER</a>
+                        <a href="#" class="btn  sura-boton-contratar" onclick="validatepaso3()">CONTRATAR</a>
+                    </div>
+                </div>
+                <!-- botones -->
+           </div>
+        </div>
+    </div>
+    <footer></footer>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.rut.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
