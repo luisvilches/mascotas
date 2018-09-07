@@ -356,7 +356,12 @@ label .tooltip-sura{
   height:23px;
   margin-left:20px;
 }
-
+.container-mandato {
+  position: relative;
+   top: -130px; 
+   left: 40px;
+    max-width: 90%;
+}
 .sura-margin-row{
   margin-top:40px;
   margin-bottom: 40px;
@@ -576,18 +581,24 @@ td{
     display: block!important;
   }
   .modal-dialog {
-    position: relative;
-  
-    left: 50px !important;
-  }
-  .modal-dialog h3 {
-    font-size: 22px;
-    display: flex;
-  }
-  .modal-dialog p txt-14 {
-    font-size: 1rem !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     
   }
+  .modal-content {
+    max-width: 80%;
+    left: 20%;
+  }
+
+  .modal-dialog h3 {
+    font-size: 22px;
+  
+  }
+  
 
   .coberturas img{
     margin: 0 auto;
