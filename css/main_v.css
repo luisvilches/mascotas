@@ -304,3 +304,7 @@ footer{
 .tab-content > .active, .pill-content > .active {
     height: auto;      /* let the content decide it  */
 } 
+
+.datepicker-days{
+  cursor: pointer!important;
+}
