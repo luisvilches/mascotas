@@ -123,7 +123,7 @@ span .sura-parrafo{
   text-transform: uppercase;
   text-decoration: none !important;
   margin-top: 20px;
-  margin-bottom:40px;
+ 
 }
 .sura-boton-contratar:hover{
   background-color:#c4c816;
@@ -1097,12 +1097,19 @@ td{
     padding: 20px!important;
   }
   .animacion-plan {
-    width: 250px;
-    position: relative;
-    left: 20px;
-    top: 0px;
-    margin-right: 10%;
+      width: 500px;
+      position: relative;
+      height: 250px;
+      right: 50px;
+      top: -85px;
+      margin-right: 10%;
   }
+  .sura-ofrecimiento .banner-background {
+    background-image: url('../img/background-responsive.png');
+  }
+
+
+  
 
   .icon-right{
     top: 0;
@@ -1336,6 +1343,7 @@ section.content ul li{
   border-radius: 2px;
     height: 37px;
     width: 200px;
+
     background-color: #E3E829;
     color: #0033A0!important;
     text-transform: uppercase;
