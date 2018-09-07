@@ -904,7 +904,7 @@ td{
   color:#0033A0; 
   position: relative;
   display: block;
-  z-index: -2;
+  
   width: 200px; 
   height: 37px;
   border-radius: 5px;
@@ -916,13 +916,17 @@ td{
 .heading-error {
 
   color: #fff;
-  font-size: 1em;
   padding-top: 1em;
 
 }
-.heading-error h1 {
+
+.heading-error h3 {
+  font-size: 22px;
    text-shadow: 1px solid #979797;
   
+}
+.text-heading-3 {
+  font-size: 22px !important;
 }
 .list-error {
   margin-left: 30%;
