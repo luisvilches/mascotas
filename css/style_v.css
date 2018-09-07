@@ -575,6 +575,19 @@ td{
   .slider-nav {
     display: block!important;
   }
+  .modal-dialog {
+    position: relative;
+  
+    left: 50px !important;
+  }
+  .modal-dialog h3 {
+    font-size: 22px;
+    display: flex;
+  }
+  .modal-dialog p txt-14 {
+    font-size: 1rem !important;
+    
+  }
 
   .coberturas img{
     margin: 0 auto;
@@ -814,13 +827,22 @@ td{
 }
 .modal-dialog {
   position: fixed;
-  width: 780px;
-  max-width: 70%;
-  margin: 10px;
-  top: 20px;
-  left: 250px;
+
+
+ 
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
+}
+.modal-content {
+  width: 780px;
+  margin-left: -40px;
+
+}
+#heading-modal {
+  margin-top: -40px;
+
 }
 .modal-dialog .close {
   font-size: 20px;
