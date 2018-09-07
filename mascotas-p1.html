@@ -54,20 +54,12 @@
                             <p class="sura-legal">*Campos son obligatorios</p>
                             <p class="sura-parrafo pad-b-30">¿A quién deseas contratarle este seguro?</p>
                             <div class="select-type">
-                           		<!--div class="row">
-                           			<div class="col-xs-6 col-sm-3 col-lg-2">
-                           				<img src="img/dog-gris.png" class="icon-perro" alt="">
-                           			</div>
-                           			<div class="col-xs-6 col-sm-3 col-lg-2">
-                           				<img src="img/cat-gris.png" class="icon-gato" alt="">
-                           			</div>
-                           		</div-->
                            		<div class="row pad-t-10">
-                           			<div style="padding: 0; position: relative; top: -35px" class="col-xs-6 col-sm-3 col-lg-2 radio-buttons">
+                           			<div class="col-xs-6 col-sm-3 col-lg-2 radio-buttons mascotas-buttons">
                            				<input type="radio" id="Perro" name="tipo-mascota" value="Perro" onchange="perroGato()">
     				                      <label for="Perro"><img src="img/dog-gris.png" class="icon-perro" alt=""><p class="text-center mt10">Perro</p></label>
                            			</div>
-                           			<div style="padding: 0; position: relative; top: -35px" class="col-xs-6 col-sm-3 col-lg-2 radio-buttons">
+                           			<div class="col-xs-6 col-sm-3 col-lg-2 radio-buttons">
                            				<input type="radio" id="Gato" name="tipo-mascota" value="Gato" onchange="perroGato()">
     				                      <label for="Gato"><img src="img/cat-gris.png" class="icon-gato" alt=""><p class="text-center mt10">Gato</p></label>
                            			</div>
@@ -139,7 +131,7 @@
                                     <div class="row">
                                         <div class="col-md-12 radio-buttons">
                                             <input type="radio" id="tamanoS" name="tamano" value="tamanoS" data-target="#contenido" />
-                                            <label for="tamanoS"><img src="img/pata-1.png" class="icon-tipo-cobertura icon-tamano-s" alt="">Pequeño<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                            <label for="tamanoS"><img src="img/pata-1.png" class="icon-tipo-cobertura icon-tamano-s" alt="">Pequeño<img src="img/icon-tooltip.png" alt="informacion" class="inline i-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
                                         </div>
                                     </div>
                                 </div>
@@ -147,7 +139,7 @@
                                     <div class="row">
                                         <div class="col-md-12 radio-buttons">
                                             <input type="radio" id="tamanoM" name="tamano" value="tamanoM" data-target="#estructura-contenido"/>
-                                            <label for="tamanoM"><img src="img/pata-2.png" class="icon-tipo-cobertura icon-tamano-m" alt="">Mediano<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                            <label for="tamanoM"><img src="img/pata-2.png" class="icon-tipo-cobertura icon-tamano-m" alt="">Mediano<img src="img/icon-tooltip.png" alt="informacion" class="inline i-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +147,7 @@
                                     <div class="row">
                                         <div class="col-md-12 radio-buttons">
                                             <input type="radio" id="tamanoL" name="tamano" value="tamanoL" data-target="#estructura"/>
-                                            <label for="tamanoL"><img src="img/pata-3.png" class="icon-tipo-cobertura icon-tamano-l" alt="">Grande<img src="img/icon-tooltip.png" alt="informacion" class="inline tooltip-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
+                                            <label for="tamanoL"><img src="img/pata-3.png" class="icon-tipo-cobertura icon-tamano-l" alt="">Grande<img src="img/icon-tooltip.png" alt="informacion" class="inline i-sura" data-toggle="tooltip" data-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure, qui similique ipsum inventore."></label>
                                         </div>
                                     </div>
                                 </div>
@@ -185,7 +177,7 @@
                     <!-- detalle de tu Mascota -->
               
                     <!-- botones -->
-                    <div  style="position: relative; top: -80px" class="row sura-margin-row"><!-- cambiar a gift y  darle mas padding footer distancia de footer 80px -->
+                    <div  style="position: relative;" class="row sura-margin-row mgb80"><!-- cambiar a gift y  darle mas padding footer distancia de footer 80px -->
                         <div class="alert hidden">
                             <div class="alert alert-danger" role="alert">
                                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -238,7 +230,12 @@
         </div>
     </div>
     <!-- modal -->
-
+    <!-- Generated markup by the plugin -->
+    <div class="tooltip top" role="tooltip">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner"></div>
+    </div>
+      
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

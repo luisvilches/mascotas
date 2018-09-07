@@ -298,6 +298,12 @@ label .tooltip-sura{
   color:#777E89;
   margin-bottom: 20px;
 }
+
+.mascotas-buttons label{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
 .declaracion select{
   margin-top: 50px;
 }
@@ -1158,7 +1164,7 @@ td{
 .no-desktop{display: none;}
 .i-sura{
   margin-left: 20px;
-    height: 13px;
+  height: 13px;
 }
 
 .paso4 .control_indicator{
@@ -1398,6 +1404,8 @@ section.content ul li{
 
 @media(max-width:768px){
 
+  .btn{max-width: 200px;}
+
   #table td{
     display: block;
     text-align: center;
@@ -1418,8 +1426,21 @@ section.content ul li{
   .table-cubre, .table-pack{
     box-shadow: none!important;
   }
-}
 
+  .mobile{display: block!important;}
+}
+.mobile{display: none;}
 
 .mgb40{margin-bottom: 40px!important;}
 .mgb80{margin-bottom: 80px!important;}
+
+
+.tooltip{width: 200px;}
+
+
+.img-docs{position: absolute;right: 0px;bottom: 40px;}
+.mgt40{margin-top:40px!important;}
+
+.modal{
+  background:rgba(0,0,0,.5);
+}
