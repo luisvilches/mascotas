@@ -81,6 +81,13 @@ label{
 }
 span .sura-parrafo{
   margin-bottom: 6px;
+
+}
+.sura-parrafo-1{
+  display: block;
+  position: relative;
+  left: -25px;
+
 }
 
 .sura-legal{
@@ -588,6 +595,15 @@ td{
     bottom: 0;
 
     
+  }
+  .sura-parrafo-1 {
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    margin-bottom: 30px;
+
   }
   .modal-content {
     max-width: 80%;
