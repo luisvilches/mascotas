@@ -7,6 +7,8 @@
     <title>Seguros SURA - Mi Mascota Paso 2</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/main_v.css">
     <link rel="stylesheet" href="css/style_v.css">
     <link rel="stylesheet" href="css/help-class.css">
@@ -41,7 +43,6 @@
                                 <h2 class="sura-titulo-banner bold">Plan Mascota</h3>
                                 <h3 class="sura-precio-banner bold">$19.990</h1>
                                 <p class="sura-subtitulo-banner bold">UF 00000</p>
-                                <p class="sura-parrafo-banner">*Esta cotización es válida<br> desde el xx/xx/xxx al xx/xx/xxx</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-7 text-center">
@@ -55,19 +56,19 @@
                         <div class="col-xs-12">
                             <h4 class="sura-subtitulo bold pdb20">Coberturas</h4>
                         </div>
-                        <div class="col-xs-12 col-md-5 ">
+                        <div class="col-xs-6 col-md-5 ">
                             <img src="img/icon-consulta1.png">
                             <p class="sura-parrafo bold pad-t-10">Consulta médica</p>
                         </div>
-                        <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-6 col-md-5">
                             <img src="img/icon-hotel1.png" class="img-circle">
                             <p class="sura-parrafo bold pad-t-10">Hotel para tu <br>mascota</p>
                         </div>
-                         <div class="col-xs-12 col-md-5">
+                         <div class="col-xs-6 col-md-5">
                             <img src="img/icon-paseo1.png">
                             <p class="sura-parrafo bold pad-t-10">Paseo canino</p>
                         </div>
-                        <div class="col-xs-12 col-md-5">
+                        <div class="col-xs-6 col-md-5">
                            <img src="img/icon-asistencia1.png">
                             <p class="sura-parrafo bold pad-t-10">Asistencia legal telefónica</p>
                         </div>
@@ -75,14 +76,14 @@
                             <img src="img/icon-informacion1.png">
                             <p class="sura-parrafo bold pad-t-10">Información mejor precio</p>
                         </div>
-                        <div class="col-xs-12 mar-t-30">  
+                        <div class="col-xs-12 mar-t-30 no-mobile">  
                             <table class="table table-cubre">
                                 <tr>
                                   <th>Cubre</th>
                                   <th>No cubre</th>
                                 </tr>
                                 <tr>
-                                    <td><img src="img/icon-consulta2.png" class="pull-left pad-r-10 pad-b-30">Podrás realizar un chequeo preventivo a tu mascota luego de un año de contratado este seguro.</td>
+                                    <td><img src="img/icon-consulta2.png" class="pull-left pad-r-10 pad-b-30"><p>Podrás realizar un chequeo preventivo a tu mascota luego de un año de contratado este seguro.</p></td>
                                     <td><img src="img/icon-nocubre.png" class="pull-left pad-r-10 pad-b-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</td>
                                 </tr>
                                 <tr>
@@ -103,6 +104,92 @@
                                 </tr>
                             </table>
                         </div><!-- .col-xs-12 -->
+
+
+                        <div class="col-md-12 no-desktop">
+                            <div class="items-mobile">
+                                <div class="slides">
+                                    <div class="texto text-center">
+                                        <h4><strong>Cubre</strong></h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <table>
+                                                <td>
+                                                    <img src="img/icon-consulta2.png" class="pull-left">
+                                                </td>
+                                                <td>
+                                                    <p class="text-left">Podrás realizar un chequeo preventivo a tu mascota luego de un año de contratado este seguro.</p>
+                                                </td>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-hotel2.png" class="pull-left"></td>
+                                                <td><p>Podrás utilizar el hotel de mascotas 2 veces al año, con un máximo de 5 días, un tope de 1 UF diaria y el copago de $3.000 diarios.</p></td>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-paseo2.png" class="pull-left"></td>
+                                                <td><p>El paseo canino puede ser solicitado 2 veces al año.</p></td>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-asistencia2.png" class="pull-left"></td>
+                                                <td><p>El servicio de Asistencia Legal Telefónica es ilimitado, por lo que podrás utilizarlo cuando lo necesites.</p></td>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-informacion2.png" class="pull-left"></td>
+                                                <td><p>Podrás llamar las veces que quieras consultando por los lugares con mejores precios para la comidad de tu mascota. Este servicio es ilimitado.</p></td>
+                                            </table>
+                                        </li>
+                                    </ul>
+                                </div>
+    
+                                <div class="slides">
+                                    <div class="texto text-center">
+                                        <h4><strong>No cubre</strong></h4>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-nocubre.png" class="pull-left"></td>  
+                                                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</p></td>
+                                            </table>    
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-nocubre.png" class="pull-left"></td>  
+                                                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</p></td>
+                                            </table>    
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-nocubre.png" class="pull-left"></td>  
+                                                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</p></td>
+                                            </table>    
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-nocubre.png" class="pull-left"></td>  
+                                                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</p></td>
+                                            </table>    
+                                        </li>
+                                        <li>
+                                            <table>
+                                                <td><img src="img/icon-nocubre.png" class="pull-left"></td>  
+                                                <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod odit assumenda eaque blanditiis autem fuga quis! Dicta delectus iure, fugit.</p></td>
+                                            </table>    
+                                        </li>
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div><!-- .row -->
                     <!-- coberturas -->
 
@@ -112,10 +199,10 @@
                             <h4 class="sura-subtitulo bold pdb20">Mejora tu Plan con este Pack Adicional:</h4>
                             <p class="sura-parrafo txt16 pdb20">Descubre las coberturas especiales que tenemos para tu mascota y protégelo aún más.</p>
                             <!--OVER MISMO COLOR -->
-                            <button class="btn btn-default btn-continuar mar-t-0 mar-b-20 mg0 pdb30 outline-none" type="button" data-toggle="collapse" data-target="#collapsePackAdicional" aria-expanded="false" aria-controls="collapsePackAdicional">VER PACK</button>
+                            <button class="btn btn-continuar mar-t-0 mar-b-20 mg0 pdb30 outline-none" type="button" data-toggle="collapse" data-target="#collapsePackAdicional" aria-expanded="false" aria-controls="collapsePackAdicional">VER PACK</button>
 
                             <div class="collapse" id="collapsePackAdicional">
-                                <table class="table table-striped table-pack">
+                                <table class="table table-striped table-pack" id="table">
                                     <tr>
                                         <td width="50"><img src="img/icon-asistencia3.png"></td>
                                         <td><strong>En caso de que tu mascota se enferme, tendrás orientación telefónica de un médico veterinario.</strong></td>
@@ -172,7 +259,7 @@
                             </div>
                             <!-- radio input -->
 
-                            <div class="row sura-margin-row"><!-- Piso mascota menor en relacion -->
+                            <div class="row sura-margin-row mgb40"><!-- Piso mascota menor en relacion -->
                                     <div class="col-xs-12 col-sm-4 col-md-4 sura-adicional">
                                         <div class="sura-adicional-info">
                                             <h2 class="sura-titulo-banner bold">Plan Mi Mascota</h2>
@@ -212,7 +299,7 @@
                     <div class="row sura-margin-row">
                         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                             <a href="index.html" class="btn sura-boton-contratar full-width-btn">CONTRATAR</a>
-                            <a href="paso-1.html" class="otros-datos-txt">Cotiza con otros datos</a>
+                            <a href="paso-1.html" class="otros-datos-txt mgb80">Cotiza con otros datos</a>
                         </div>
                     </div>
                     <!-- botones -->
@@ -227,7 +314,19 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.rut.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<script>
+    $('.items-mobile').slick({
+        dots: true,
+        //mobileFirst:true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '10px',
+        slidesToShow: 1
+	});
+</script>
 
 </body>
 </html>

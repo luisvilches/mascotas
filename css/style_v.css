@@ -485,6 +485,8 @@ td{
   position: relative;
   top: 45px;
 }
+
+
 .slick-current .header {
   display: inline-block;
   background-image: url(../img/triangle_background.png);
@@ -528,6 +530,7 @@ td{
     right: -2px;
     color: #ffffff !important;
 }
+
 .coberturas-txt {
     font-weight: bold;
     color: #333333;
@@ -588,21 +591,22 @@ td{
 }
 
 
+
 .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 25px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
+    position: relative!important;
+    display: inline-block!important;
+    width: 25px!important;
+    height: 20px!important;
+    margin: 0 5px!important;
+    padding: 0!important;
+    cursor: pointer!important;
 }
 .slick-dots li button::before {
-    font-size: 28px;
-    color: #999;
+    font-size: 28px!important;
+    color: #999!important;
 }
 .slick-dots li.slick-active button::before {
-    color: #0033A0;
+    color: #0033A0!important;
 }
 
 .slick-current .header::after {
@@ -617,6 +621,8 @@ td{
     right:10px;
     color: #ffffff !important;
 }
+
+
 /*sliders*/
 
 
@@ -720,10 +726,40 @@ td{
   background: url(../img/fondo-plan-desktop.png);
   /*background-size: 120% 120%;*/
   background-position: center center; 
-  background-repeat: no-repeat;
+  background-repeat: no-repeat!important;
   height: 260px;
   padding: 0;
   margin-top: 20px;
+  border-radius: 20px;
+
+}
+
+@media(max-width:768px){
+  .banner-background{
+    background: url(../img/fondo-plan-mobile.png)!important;
+    background-position: center; 
+    background-repeat: no-repeat!important;
+    width: 100%;
+    height: 370px;
+    margin: auto!important;
+  }
+
+  .sura-titulo{
+    margin: 20px 0px;
+  }
+
+  .sura-subtitulo{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .sura-ofrecimiento{
+    background-position: center!important;
+  }
+
+  .sura-ofrecimiento-info{
+    width: 100%!important;
+  }
 }
 
 .sura-ofrecimiento{
@@ -734,12 +770,12 @@ td{
 }
 .sura-adicional{
   background: url(../img/caja-plan-celeste.png) no-repeat;
-  height: 249px;
+  height: 200px;
   color: white;
 }
 .sura-total{
   background: url(../img/caja-plan-azul.png) no-repeat;
-  height: 249px;
+  height: 200px;
   color: white;
 }
 .sura-ofrecimiento-info{
@@ -1037,7 +1073,7 @@ td{
 }
 
 
-.table-cubre img{position: relative; top: 5px;}
+.table-cubre img{position: relative; top: 5px;left: 10px;margin-right: 15px;}
 .table-cubre img.especial{position: relative; top: -5px!important;}
 .txt16{font-size: 16px;}
 .mg0{margin: 0;}
@@ -1061,11 +1097,11 @@ td{
     padding: 20px!important;
   }
   .animacion-plan {
-      width: 250px;
-      position: relative;
-      left: 100px;
-      top: -85px;
-      margin-right: 10%;
+    width: 250px;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    margin-right: 10%;
   }
 
   .icon-right{
@@ -1079,8 +1115,35 @@ td{
     top: 160px!important;
     right: 10%!important;
   }
-}
 
+  .sura-adicional-info{
+    width: 100%!important;
+  }
+
+  .sura-adicional{
+    background: url(../img/caja-plan-celeste-mobile.png) no-repeat;
+    height: 230px;
+    color: white;
+    margin: auto;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sura-total{
+    background: url(../img/caja-plan-azul-mobile.png) no-repeat;
+    height: 230px;
+    color: white;
+    margin: auto;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .no-mobile{display:none!important;}
+  .no-desktop{display: block!important;}
+}
+.no-desktop{display: none;}
 .i-sura{
   margin-left: 20px;
     height: 13px;
@@ -1291,3 +1354,59 @@ section.content ul li{
   .bg-exito img{bottom:-30px; padding: 0 10px;}
   section.content ul{width: 100%;}
 }
+
+.slides{background: #F7F7F7;}
+.slides .texto{
+  background: #F0F0F0;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.slides .texto h4{
+  color: #333333;
+  font-size: 16px;
+}
+.slides ul{padding: 20px;margin: 0;    min-height: 520px!important;}
+.slides ul li {list-style: none;margin-bottom: 20px;}
+.slides ul li img{margin-right: 10px;}
+.slides ul li p{text-align: left!important;color: #707372;margin-bottom: 0!important}
+
+.slick-dots{bottom: -40px;}
+.slick-dots li.slick-active button::before{
+  color: #707372!important;
+}
+
+.slick-dots li button::before {
+  font-size: 22px!important;
+}
+
+
+
+
+@media(max-width:768px){
+
+  #table td{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    border-bottom: 1px solid #fff;
+    padding: 10px!important;
+  }
+
+  #table td:nth-child(1){
+    border:none!important;
+  }
+
+  #table tr{
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .table-cubre, .table-pack{
+    box-shadow: none!important;
+  }
+}
+
+
+.mgb40{margin-bottom: 40px!important;}
+.mgb80{margin-bottom: 80px!important;}
