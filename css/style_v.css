@@ -81,6 +81,13 @@ label{
 }
 span .sura-parrafo{
   margin-bottom: 6px;
+
+}
+.sura-parrafo-1{
+  display: block;
+  position: relative;
+  left: -25px;
+
 }
 
 .sura-legal{
@@ -362,7 +369,12 @@ label .tooltip-sura{
   height:23px;
   margin-left:20px;
 }
-
+.container-mandato {
+  position: relative;
+   top: -130px; 
+   left: 40px;
+    max-width: 90%;
+}
 .sura-margin-row{
   margin-top:40px;
   margin-bottom: 40px;
@@ -581,6 +593,34 @@ td{
   .slider-nav {
     display: block!important;
   }
+  .modal-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    
+  }
+  .sura-parrafo-1 {
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: 0px;
+    margin-bottom: 30px;
+
+  }
+  .modal-content {
+    max-width: 80%;
+    left: 20%;
+  }
+
+  .modal-dialog h3 {
+    font-size: 22px;
+  
+  }
+  
 
   .coberturas img{
     margin: 0 auto;
@@ -817,6 +857,28 @@ td{
   -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3);
   box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.3);
+}
+.modal-dialog {
+  position: fixed;
+
+
+ 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal-content {
+  width: 780px;
+  margin-left: -40px;
+
+}
+#heading-modal {
+  margin-top: -40px;
+
+}
+.modal-dialog .close {
+  font-size: 20px;
 }
 .table-cubre th {
   background: #F0F0F0!important;

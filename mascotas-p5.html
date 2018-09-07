@@ -51,14 +51,14 @@
                         <!-- detalle de pago -->
                         
                         <div s class="row detalle-pago">
-                            <div style="margin-top: -55px;" class="col-xs-6 col-sm-3 col-md-3">
+                            <div style="margin-top: -5px;" class="col-xs-6 col-sm-3 col-md-3">
                                 <div class="precio-titulo">
                                     <p>Precio base:</p>
                                     <p>$6.990 CLP</p>
                                     <p>0,2592 UF</p>
                                 </div>
                             </div>
-                            <div   style="margin-top: -55px;" class="col-xs-6 col-sm-3 col-md-3">
+                            <div   style="margin-top: -5px;" class="col-xs-6 col-sm-3 col-md-3">
                                 <div class="precio-uf">
                                     <p>Precio total:</p>
                                     <p>$6.990 CLP</p>
@@ -87,16 +87,16 @@
                             <img src="img/patpass.png" alt="" class="pat-pass-payment-logo absolute img-right">
                         </div>
 
-                        <div style="position: relative; top: -25px" class="row detalle-prima"></div>
-                        <p style="margin-top: -25px; margin-bottom: -50px; position: absolute;" class="sura-parrafo">* Cliente no posee mandatos activos en la compañía.</p>
+                        <div class="row detalle-prima"></div>
+                        <p  class="sura-parrafo sura-parrafo-1">* Cliente no posee mandatos activos en la compañía.</p>
                     </div>
                         <!-- activar mandato -->
-                        <div  style="position: relative; top: -130px; left: 40px; max-width: 90%;" class="container">
+                        <div   class="container container-mandato">
                        
 
                         <div class="row" >
                             <div class="col-xs-12 col-sm-12 col-md-3 pad-b-50 pd0">
-                                <button id="activarPat" type="button" class="btn btn-activar-mandato" data-toggle="modal" data-target="#modal-pat">ACTIVAR NUEVO MANDATO</button>
+                                <button id="activarPat" type="button" class="btn-activar-mandato" data-toggle="modal" data-target="#modal-pat">ACTIVAR NUEVO MANDATO</button>
                             </div>
                         </div>
                     </form>
@@ -139,14 +139,14 @@
                 <div class="modal fade modal-md modal-exito" id="suscripcion-pat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div style="height: 40px;">
+                            <button   type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         </div>
                       <div class="modal-body">
-                        <div class="row">
+                        <div  id="heading-modal" class="row ">
                             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                <h3 class="bold txt-18 margin-bottom-20">Suscripción PAT</h3>
-                                <p class="txt-14 margin-bottom-30 text-center">Te has suscrito exitosamente a la modalidad de pago PAT. Tu número de mandato es: xxxxxx</p>
+                                <h3  class="bold txt-18 margin-bottom-20">Suscripción PAT</h3>
+                                <p class="txt-14 margin-bottom-30 ">Te has suscrito exitosamente a la modalidad de pago PAT.<br> Tu número de mandato es: xxxxxx</p>
                             </div>
                         </div>
                         <div class="row">
