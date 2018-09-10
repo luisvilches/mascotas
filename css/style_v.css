@@ -761,6 +761,9 @@ td{
     background-color: #0033A0;
 
  }
+ .footer {
+  margin-top: 80px !important;
+ }
 
 .box-form {
     margin-top: 30px;
@@ -832,7 +835,7 @@ td{
 }
 .sura-adicional-info .sura-titulo-banner,
 .sura-ofrecimiento-info .sura-titulo-banner {
-  font-size: 24px;
+  font-size: 22px;
   padding-top: 20px;
 }
 .sura-adicional-info .sura-precio-banner,
@@ -1505,4 +1508,10 @@ section.content ul li{
 
 .modal{
   background:rgba(0,0,0,.5);
+}
+@media(max-width: 320px){
+  .icon-right {
+    width: 60px;
+    left: 210px;
+  }
 }
